@@ -12,9 +12,9 @@
       document.getElementById("lname").value = "";
       document.getElementById("displayarea2").innerHTML = document.getElementById("amount").value;
       document.getElementById("amount").value = "";
-
     }
   </script>
+
   <style>
     body {
       background-color: none;
@@ -90,8 +90,6 @@
       color: black;
       text-transform: uppercase;
       font-family: 'Lucida Sans', 'Lucida Sans Regular';
-
-
     }
   </style>
 </head>
@@ -99,42 +97,41 @@
 <body>
 
   <ul>
-    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;"   href="about.html">About Us</a></li>
-    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;"   href="customer.html">Customer</a></li>
-    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;"   href="index.html">Home Page</a></li>
+    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;" href="about.html">About Us</a></li>
+    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;" href="customer.html">Customer</a></li>
+    <li><a style="text-decoration:none;font-size: 22px;font-weight: bold;" href="index.html">Home Page</a></li>
 
-    <h2 style="text-decoration:none;text-align:center;font-size:30px;width:370px;border-radius:10px;padding:10px;background-color: rgb(248, 123, 144);
-    ">Money Transfer</h2>
-
-
-
-
-
+    <h2 style="text-decoration:none;text-align:center;font-size:30px;width:370px;border-radius:10px;
+    padding:10px;background-color: rgb(248, 123, 144);">Money Transfer</h2>
   </ul>
+
   <form name="form1" id="form1">
-    Sender
+    <span style="font-size:22px;font-weight:bold;">Sender</span>
     <input type="email" class="intro" name="fname" id="fname"><br><br>
-    Receiver
+    <span style="font-size:22px;font-weight:bold;">Receiver</span>
     <input type="email" class="intro" name="lname" id="lname"><br><br>
-    Amount
+    <span style="font-size:22px;font-weight:bold;">Amount</span>
     <input type="number" class="intro" name="amount" id="amount"><br><br>
     <input type="button" value="Transfer" name="submit" id="submit" onClick="display()"></td>
   </form>
+
   <style>
     h2,
     h3 span {
       text-decoration: underline;
-
     }
   </style>
-  <center>
-    <h3>Transaction History</h3>
-  </center>
-  <table width="200px" align="center" border=0>
+
+  <h3>Transaction History</h3>
+  
+  <table width="100px" align="center" border=0>
     <tr style="background-color:rgb(248, 81, 109);">
-      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:130px;padding:8px;border-radius: 10px;" align="center"><b>Sender</b></td>
-      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:130px;padding:8px;border-radius: 10px;" align="center"><b>Receiver</b></td>
-      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:130px;padding:8px;border-radius: 10px;" align="center"><b>Amount</b></td>
+      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:100px;padding:8px;border-radius: 10px;"
+        align="center"><b>Sender</b></td>
+      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:100px;padding:8px;border-radius: 10px;"
+        align="center"><b>Receiver</b></td>
+      <td style="text-decoration:none;font-size: 22px;font-weight: bold;width:100px;padding:8px;border-radius: 10px;"
+        align="center"><b>Amount</b></td>
     </tr>
     <tr>
       <td align="center">
